@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/id_top_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="全部"
+                android:textSize="16sp"
+                android:textColor="#b1b1b1"/>
+
+
+            <TextView
+                android:id="@+id/us"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="美国"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/world"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="世界"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/life"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="生活"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/amuse"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="娱乐"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/health"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="健康"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="教育"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/business"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="商业"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/science"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="科技"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="历史"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="单词故事"
+                android:textColor="#b1b1b1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

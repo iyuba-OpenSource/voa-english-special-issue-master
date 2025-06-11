@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SubtitleSyncGenericView">
+        <attr format="color" name="sub_background_color"/>
+        <attr format="color" name="sub_highlight_color"/>
+        <attr format="color" name="sub_normal_color"/>
+        <attr format="float" name="sub_text_size"/>
+        <attr format="float" name="sub_line_spacing_multi"/>
+    </declare-styleable>
+</resources>

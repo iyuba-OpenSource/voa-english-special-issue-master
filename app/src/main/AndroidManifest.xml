@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 网络请求权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /><!-- 录音 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 播音 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/voalan"
+        android:label="VOA英语特刊"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestSG"
+        tools:replace="android:label,android:allowBackup,android:theme,android:networkSecurityConfig"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".activity.InfoActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.MyMoneyDetailActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.ReadReporterDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SpokenDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HearingDetailActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.LearningReportActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.WKbuyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.IyubiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SearchResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ClockActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.iyuba.voaEnglish" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxd9985efb50eca08c" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MyClockActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MyWordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MyCollectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ForgotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.InterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StartActivity"
+
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VIPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserRankingListActivity"
+            android:exported="false" /> <!-- android:label="@string/title_activity_user_list" -->
+        <!-- android:theme="@style/Theme.TestSG.NoActionBar" -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VoaDetailActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.iyuba.voaEnglish.activity.ad.AdActivity"
+            android:exported="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_common" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="VOA英语特刊"
+        android:textColor="@color/black"
+        android:textSize="28sp"></TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                android:padding="15dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/phone" />
+
+            <EditText
+                android:id="@+id/user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:minHeight="48dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hintColor" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                android:padding="15dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/nicheng" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColorHint="@color/hintColor"
+                android:hint="请输入用户昵称"
+                android:maxLength="15"
+                android:minHeight="48dp"
+                android:minLines="3"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                android:padding="15dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/pas1" />
+
+            <EditText
+                android:id="@+id/user_pas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColorHint="@color/hintColor"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:minHeight="48dp"
+                android:minLines="6"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                android:padding="15dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/pas" />
+
+            <EditText
+                android:id="@+id/user_pas_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColorHint="@color/hintColor"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                android:padding="15dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/code" />
+
+            <EditText
+                android:id="@+id/user_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColorHint="@color/hintColor"
+                android:hint="请输入验证码"
+                android:minHeight="48dp"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/get_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/black"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/privacy_and_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:buttonTint="#1296db"
+        android:minHeight="48dp"
+        android:text="我已阅读并同意隐私政策和使用条款">
+
+    </RadioButton>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/black">
+
+    </Button>
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ai_tv_csj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="穿山甲"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <ImageView
+            android:id="@+id/ai_iv_ad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ad_pic1" />
+
+
+        <TextView
+            android:id="@+id/ai_tv_ylh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="优量汇"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <ImageView
+            android:id="@+id/ai_iv_ad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ad_pic1" />
+
+        <TextView
+            android:id="@+id/ai_tv_bd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="百度"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <ImageView
+            android:id="@+id/ai_iv_ad3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ad_pic1" />
+
+        <TextView
+            android:id="@+id/ai_tv_ks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="快手"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <ImageView
+            android:id="@+id/ai_iv_ad4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ad_pic1" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

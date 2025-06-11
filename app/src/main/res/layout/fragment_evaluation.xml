@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFEC"
+    android:orientation="vertical"
+    tools:context=".activity.EvaluationFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/compose_bar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/original_tv_play_time"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="00:00"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+
+                <SeekBar
+                    android:id="@+id/original_sb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:progressTint="?colorPrimary"
+                    android:thumbTint="?colorPrimary" />
+
+                <TextView
+                    android:id="@+id/original_tv_duration"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/compose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:textColor="@color/black"
+                android:text="合成"></Button>
+
+
+            <Button
+                android:id="@+id/page_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:textColor="@color/black"
+                android:text="试听"
+                android:visibility="gone"></Button>
+
+            <TextView
+                android:id="@+id/try_listen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textColor="@color/black"
+                android:textSize="20sp"></TextView>
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/page_play"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:src="@drawable/zanting">-->
+
+            <!--            </ImageView>-->
+
+            <Button
+                android:id="@+id/up_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@drawable/button_background"
+                android:text="上传"></Button>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

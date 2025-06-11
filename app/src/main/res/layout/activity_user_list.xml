@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFEC"
+    android:orientation="vertical"
+    tools:context=".activity.UserRankingListActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_common" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#F0EFEC"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="30dp">
+
+
+            <ImageView
+                android:id="@+id/ranking_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/ranking_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/ranking_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ranking_sentence"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/ranking_avg"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0EFEC">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

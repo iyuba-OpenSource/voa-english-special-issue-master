@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/toorbar0"
+        layout="@layout/toolbar_common">
+    </include>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/word_rv"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/loading_loadend"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F0EFEC"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible">
+
+
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="style/Widget.ProgressBar.Small.Inverse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="加载中"
+            android:textSize="16sp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/loading"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="加载中"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:gravity="center"-->
+        <!--            android:textColor="@colorack"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:visibility="visible">-->
+        <!--        </TextView>-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

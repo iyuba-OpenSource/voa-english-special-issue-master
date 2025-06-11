@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/fanhui"
+        android:layout_height="50dp"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="110dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="我的学习报告"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="center"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lunbo"
+
+        />
+
+
+
+</LinearLayout>

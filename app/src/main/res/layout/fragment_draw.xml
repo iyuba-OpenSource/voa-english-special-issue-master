@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/draw"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="MissingClass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/ks_draw"
+            android:text="快手"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/zhifu"></TextView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/csj_draw"
+            android:text="穿山甲"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/zhifu"></TextView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/ylh_draw"
+            android:text="优量汇"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/zhifu"></TextView>
+
+
+<!--        <TextView-->
+<!--            android:text="穿山甲"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        </TextView>-->
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:id="@+id/csj_draw"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="65dp"-->
+<!--            android:orientation="horizontal">-->
+<!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </FrameLayout>
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/ad_rv"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+
+
+</LinearLayout>

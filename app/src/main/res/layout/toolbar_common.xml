@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="?colorPrimary"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toolbar_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/icon_back" />
+
+
+
+        <TextView
+            android:id="@+id/toolbar_iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:text="VOA英语特刊"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/toolbar_iv_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:padding="12dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/search"
+            android:visibility="gone"
+             />
+
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
